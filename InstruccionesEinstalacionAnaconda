@@ -1,0 +1,39 @@
+PARA EJECUTAR LOS COMANDOS EN LOS OTROS ARCHIVOS TENEMOS QUE INSTALAR ANACONDA3 
+
+DESDE LA PAGINA OFICIAL
+
+
+una ves descargado lo instalamos en el caso de ubuntu
+
+puedes ejecutar
+los siguientes comandos:
+
+	bash Anaconda3-2019.03-Linux-x86_64.sh
+	
+presionamos enter en el ultimo mensaje
+nuevamente un enter para instalar en el lugar determinado
+
+finalmente escribimos : yes
+
+
+ejecutamos: 
+source ~/.bashrc
+conda list
+
+
+con el siguiente comando creamos un entorno de trabajo  y al final las librerias que queremos instaladas en ese entorno:
+
+conda create --name my_env python=3
+
+para activar el entorno ejecutamos 
+	conda activate nombredeentorno
+
+una vez realizado esto ejecutamos
+	jupyter notebook 
+donde podemos utilizar los comandos linea por linea de los demas archivos en este repositorio
+
+
+para desactivar el entorno ejecutamos
+	conda deactivate nombredeentorno
+
+

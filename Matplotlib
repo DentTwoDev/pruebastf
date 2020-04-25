@@ -1,0 +1,32 @@
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+
+x = np.arange(0,20)
+x
+
+y = x**2
+y
+
+plt.plot(x,y)
+
+plt.plot(x,y,'g--')
+plt.title('Titulo AQUI')
+plt.xlabel('Eje X')
+plt.ylabel('eje y')
+
+array = np.arange(0,50).reshape(10,5)
+array
+
+plt.imshow(array)
+plt.colorbar()
+
+array2 = np.random.randint(0,1000,100)
+array2
+
+array2 = array2.reshape(10,10)
+
+array2
+
+plt.imshow(array2)
+plt.colorbar()

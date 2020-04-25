@@ -1,0 +1,16 @@
+# -*- coding: utf-8 -*-
+
+import pandas as pd
+
+"""pocicionate en el lugar donde esta el archivo original csv para poder utilizarlo
+ los siguientes comandos son utilizados en el entorno anaconda con uso de jupyter notebook
+"""
+
+#crea un dataframe con los datos que estan en original.csv
+dataframe = pd.read_csv('original.csv')
+dataframe
+#hacemos una descripcion de algunos datos que pueden ser utiles
+dataframe.describe()
+# buscamos un valor de acuerdo auna pocicion que le asignemos en fila y columna
+dataframe['NOMBRE'][3]
+
